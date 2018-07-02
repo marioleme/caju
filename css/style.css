@@ -1,0 +1,1455 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-size: 100%;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-BoldItalic.eot');
+    src: local('Aleo BoldItalic'), local('Aleo-BoldItalic'),
+    url('/fonts/Aleo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-BoldItalic.woff2') format('woff2'),
+    url('/fonts/Aleo-BoldItalic.woff') format('woff'),
+    url('/fonts/Aleo-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rheiborn Sans Clean';
+    src: url('/fonts/Rheiborn_Sans_Clean.eot');
+    src: local('Rheiborn Sans Clean'), local('Rheiborn_Sans_Clean'),
+    url('/fonts/Rheiborn_Sans_Clean.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Rheiborn_Sans_Clean.woff2') format('woff2'),
+    url('/fonts/Rheiborn_Sans_Clean.woff') format('woff'),
+    url('/fonts/Rheiborn_Sans_Clean.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BodoniSeventytwoITCW01-BkIt';
+    src: url('/fonts/BodoniSeventytwoITCW01-BkIt.eot');
+    src: local('Bodoni Seventytwo ITC W01 Bk It'), local('BodoniSeventytwoITCW01-BkIt'),
+    url('/fonts/BodoniSeventytwoITCW01-BkIt.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BodoniSeventytwoITCW01-BkIt.woff2') format('woff2'),
+    url('/fonts/BodoniSeventytwoITCW01-BkIt.woff') format('woff'),
+    url('/fonts/BodoniSeventytwoITCW01-BkIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bodoni Seventytwo ITC Book';
+    src: url('/fonts/BodoniSevITC-Book.eot');
+    src: local('Bodoni Seventytwo ITC Book Regular'), local('BodoniSevITC-Book'),
+    url('/fonts/BodoniSevITC-Book.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BodoniSevITC-Book.woff2') format('woff2'),
+    url('/fonts/BodoniSevITC-Book.woff') format('woff'),
+    url('/fonts/BodoniSevITC-Book.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rheiborn Sans Clean';
+    src: url('/fonts/Rheiborn_Sans_Clean_1.eot');
+    src: local('Rheiborn Sans Clean'), local('Rheiborn_Sans_Clean'),
+    url('/fonts/Rheiborn_Sans_Clean_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Rheiborn_Sans_Clean_1.woff2') format('woff2'),
+    url('/fonts/Rheiborn_Sans_Clean_1.woff') format('woff'),
+    url('/fonts/Rheiborn_Sans_Clean_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Light.eot');
+    src: local('Aleo Light'), local('Aleo-Light'),
+    url('/fonts/Aleo-Light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Light.woff2') format('woff2'),
+    url('/fonts/Aleo-Light.woff') format('woff'),
+    url('/fonts/Aleo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Regular.eot');
+    src: local('Aleo Regular'), local('Aleo-Regular'),
+    url('/fonts/Aleo-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Regular.woff2') format('woff2'),
+    url('/fonts/Aleo-Regular.woff') format('woff'),
+    url('/fonts/Aleo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Bold.eot');
+    src: local('Aleo Bold'), local('Aleo-Bold'),
+    url('/fonts/Aleo-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Bold.woff2') format('woff2'),
+    url('/fonts/Aleo-Bold.woff') format('woff'),
+    url('/fonts/Aleo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-LightItalic.eot');
+    src: local('Aleo Light Italic'), local('Aleo-LightItalic'),
+    url('/fonts/Aleo-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-LightItalic.woff2') format('woff2'),
+    url('/fonts/Aleo-LightItalic.woff') format('woff'),
+    url('/fonts/Aleo-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rheiborn Sans Clean';
+    src: url('/fonts/Rheiborn_Sans_Clean_2.eot');
+    src: local('Rheiborn Sans Clean'), local('Rheiborn_Sans_Clean'),
+    url('/fonts/Rheiborn_Sans_Clean_2.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Rheiborn_Sans_Clean_2.woff2') format('woff2'),
+    url('/fonts/Rheiborn_Sans_Clean_2.woff') format('woff'),
+    url('/fonts/Rheiborn_Sans_Clean_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Italic.eot');
+    src: local('Aleo Italic'), local('Aleo-Italic'),
+    url('/fonts/Aleo-Italic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Italic.woff2') format('woff2'),
+    url('/fonts/Aleo-Italic.woff') format('woff'),
+    url('/fonts/Aleo-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-BoldItalic_1.eot');
+    src: local('Aleo Bold Italic'), local('Aleo-BoldItalic'),
+    url('/fonts/Aleo-BoldItalic_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-BoldItalic_1.woff2') format('woff2'),
+    url('/fonts/Aleo-BoldItalic_1.woff') format('woff'),
+    url('/fonts/Aleo-BoldItalic_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bodoni Seventytwo ITC Book';
+    src: url('/fonts/BodoniSevITC-Book_1.eot');
+    src: local('Bodoni Seventytwo ITC Book Regular'), local('BodoniSevITC-Book'),
+    url('/fonts/BodoniSevITC-Book_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BodoniSevITC-Book_1.woff2') format('woff2'),
+    url('/fonts/BodoniSevITC-Book_1.woff') format('woff'),
+    url('/fonts/BodoniSevITC-Book_1.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-LightItalic_1.eot');
+    src: local('Aleo LightItalic'), local('Aleo-LightItalic'),
+    url('/fonts/Aleo-LightItalic_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-LightItalic_1.woff2') format('woff2'),
+    url('/fonts/Aleo-LightItalic_1.woff') format('woff'),
+    url('/fonts/Aleo-LightItalic_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Regular_1.eot');
+    src: local('Aleo-Regular'),
+    url('/fonts/Aleo-Regular_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Regular_1.woff2') format('woff2'),
+    url('/fonts/Aleo-Regular_1.woff') format('woff'),
+    url('/fonts/Aleo-Regular_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Bold_1.eot');
+    src: local('Aleo Bold'), local('Aleo-Bold'),
+    url('/fonts/Aleo-Bold_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Bold_1.woff2') format('woff2'),
+    url('/fonts/Aleo-Bold_1.woff') format('woff'),
+    url('/fonts/Aleo-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-BoldItalic_2.eot');
+    src: local('Aleo BoldItalic'), local('Aleo-BoldItalic'),
+    url('/fonts/Aleo-BoldItalic_2.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-BoldItalic_2.woff2') format('woff2'),
+    url('/fonts/Aleo-BoldItalic_2.woff') format('woff'),
+    url('/fonts/Aleo-BoldItalic_2.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bodoni Seventytwo ITC';
+    src: url('/fonts/BodoniSevITC-Book_2.eot');
+    src: local('Bodoni Seventytwo ITC Book'), local('BodoniSevITC-Book'),
+    url('/fonts/BodoniSevITC-Book_2.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BodoniSevITC-Book_2.woff2') format('woff2'),
+    url('/fonts/BodoniSevITC-Book_2.woff') format('woff'),
+    url('/fonts/BodoniSevITC-Book_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Light_1.eot');
+    src: local('Aleo Light'), local('Aleo-Light'),
+    url('/fonts/Aleo-Light_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Light_1.woff2') format('woff2'),
+    url('/fonts/Aleo-Light_1.woff') format('woff'),
+    url('/fonts/Aleo-Light_1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Italic_1.eot');
+    src: local('Aleo Italic'), local('Aleo-Italic'),
+    url('/fonts/Aleo-Italic_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Italic_1.woff2') format('woff2'),
+    url('/fonts/Aleo-Italic_1.woff') format('woff'),
+    url('/fonts/Aleo-Italic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rheiborn Sans Clean';
+    src: url('/fonts/Rheiborn_Sans_Clean_3.eot');
+    src: local('Rheiborn Sans Clean'), local('Rheiborn_Sans_Clean'),
+    url('/fonts/Rheiborn_Sans_Clean_3.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Rheiborn_Sans_Clean_3.woff2') format('woff2'),
+    url('/fonts/Rheiborn_Sans_Clean_3.woff') format('woff'),
+    url('/fonts/Rheiborn_Sans_Clean_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/fonts/FontAwesome.eot');
+    src: local('FontAwesome Regular'), local('FontAwesome'),
+    url('/fonts/FontAwesome.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FontAwesome.woff2') format('woff2'),
+    url('/fonts/FontAwesome.woff') format('woff'),
+    url('/fonts/FontAwesome.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bodoni Seventytwo ITC';
+    src: url('/fonts/BodoniSevITC-Book_3.eot');
+    src: local('Bodoni Seventytwo ITC Book'), local('BodoniSevITC-Book'),
+    url('/fonts/BodoniSevITC-Book_3.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BodoniSevITC-Book_3.woff2') format('woff2'),
+    url('/fonts/BodoniSevITC-Book_3.woff') format('woff'),
+    url('/fonts/BodoniSevITC-Book_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BodoniSeventytwoITCW01-BkIt';
+    src: url('/fonts/BodoniSeventytwoITCW01-BkIt_1.eot');
+    src: local('Bodoni Seventytwo ITC W01 Bk It'), local('BodoniSeventytwoITCW01-BkIt'),
+    url('/fonts/BodoniSeventytwoITCW01-BkIt_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BodoniSeventytwoITCW01-BkIt_1.woff2') format('woff2'),
+    url('/fonts/BodoniSeventytwoITCW01-BkIt_1.woff') format('woff'),
+    url('/fonts/BodoniSeventytwoITCW01-BkIt_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-LightItalic_2.eot');
+    src: local('Aleo LightItalic'), local('Aleo-LightItalic'),
+    url('/fonts/Aleo-LightItalic_2.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-LightItalic_2.woff2') format('woff2'),
+    url('/fonts/Aleo-LightItalic_2.woff') format('woff'),
+    url('/fonts/Aleo-LightItalic_2.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Regular_2.eot');
+    src: local('Aleo-Regular'),
+    url('/fonts/Aleo-Regular_2.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Regular_2.woff2') format('woff2'),
+    url('/fonts/Aleo-Regular_2.woff') format('woff'),
+    url('/fonts/Aleo-Regular_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bodoni Seventytwo ITC Book';
+    src: url('/fonts/BodoniSevITC-Book_4.eot');
+    src: local('Bodoni Seventytwo ITC Book Regular'), local('BodoniSevITC-Book'),
+    url('/fonts/BodoniSevITC-Book_4.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/BodoniSevITC-Book_4.woff2') format('woff2'),
+    url('/fonts/BodoniSevITC-Book_4.woff') format('woff'),
+    url('/fonts/BodoniSevITC-Book_4.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('/fonts/FontAwesome_1.eot');
+    src: local('FontAwesome Regular'), local('FontAwesome'),
+    url('/fonts/FontAwesome_1.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FontAwesome_1.woff2') format('woff2'),
+    url('/fonts/FontAwesome_1.woff') format('woff'),
+    url('/fonts/FontAwesome_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Light_2.eot');
+    src: local('Aleo Light'), local('Aleo-Light'),
+    url('/fonts/Aleo-Light_2.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Light_2.woff2') format('woff2'),
+    url('/fonts/Aleo-Light_2.woff') format('woff'),
+    url('/fonts/Aleo-Light_2.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Bold_2.eot');
+    src: local('Aleo Bold'), local('Aleo-Bold'),
+    url('/fonts/Aleo-Bold_2.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Bold_2.woff2') format('woff2'),
+    url('/fonts/Aleo-Bold_2.woff') format('woff'),
+    url('/fonts/Aleo-Bold_2.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rheiborn Sans Clean';
+    src: url('/fonts/Rheiborn_Sans_Clean_4.eot');
+    src: local('Rheiborn Sans Clean'), local('Rheiborn_Sans_Clean'),
+    url('/fonts/Rheiborn_Sans_Clean_4.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Rheiborn_Sans_Clean_4.woff2') format('woff2'),
+    url('/fonts/Rheiborn_Sans_Clean_4.woff') format('woff'),
+    url('/fonts/Rheiborn_Sans_Clean_4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-BoldItalic_3.eot');
+    src: local('Aleo BoldItalic'), local('Aleo-BoldItalic'),
+    url('/fonts/Aleo-BoldItalic_3.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-BoldItalic_3.woff2') format('woff2'),
+    url('/fonts/Aleo-BoldItalic_3.woff') format('woff'),
+    url('/fonts/Aleo-BoldItalic_3.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('/fonts/Aleo-Italic_2.eot');
+    src: local('Aleo Italic'), local('Aleo-Italic'),
+    url('/fonts/Aleo-Italic_2.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Aleo-Italic_2.woff2') format('woff2'),
+    url('/fonts/Aleo-Italic_2.woff') format('woff'),
+    url('/fonts/Aleo-Italic_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* -------------------------------- 
+
+
+
+-------------------------------- */
+.cd-container {
+    
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+.cd-container::after {
+    /* clearfix */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+#cd-main-content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    /* slightly visible only when we resize this element */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+#cd-main-content.move-out {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+}
+.no-js #cd-main-content {
+    height: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#cd-intro {
+    position: relative;
+    height: 100%;
+    
+}
+#cd-intro h1 {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.no-js #cd-intro {
+    height: 640px;
+}
+
+.cd-header {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+    
+}
+
+
+.cd-blurred-bg {
+    /* we use jQuery to apply a mask to this element - CSS clip property */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/bg-img.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+.no-js .cd-blurred-bg {
+    display: none;
+}
+
+#cd-logo {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 100px;
+    height: 32px;
+}
+#cd-logo img {
+    display: block;
+}
+
+.cd-menu-trigger {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+.cd-menu-trigger span {
+    /* hamburger icon */
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    margin-left: 10px;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+.cd-menu-trigger span::before, .cd-menu-trigger span::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.cd-menu-trigger span::before {
+    top: -6px;
+}
+.cd-menu-trigger span::after {
+    bottom: -6px;
+}
+.no-touch .cd-menu-trigger:hover span::before {
+    top: -8px;
+}
+.no-touch .cd-menu-trigger:hover span::after {
+    bottom: -8px;
+}
+
+
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    /* we move this element off the canvas */
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    padding: 10%;
+    z-index: 9999;
+}
+#main-nav ul {
+    height: 100%;
+}
+#main-nav li {
+    
+}
+#main-nav li a {
+    position: relative;
+    display: block;
+    padding: 0 10%;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Rheiborn Sans Clean';
+    text-transform: uppercase;
+}
+#main-nav li a:hover{
+    color: #24d6d6;
+    text-decoration: none;
+}
+#main-nav li a span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.no-touch #main-nav li a:hover {
+    background-color: #fff;
+}
+#main-nav li:last-child a {
+    border-bottom: none;
+}
+#main-nav .cd-close-menu {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    /* image replacement */
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: 'Rheiborn Sans Clean';
+    text-transform: uppercase;
+    color: #24d6d6;
+}
+#main-nav .cd-close-menu  span{
+    padding-left: 1rem;
+}
+
+#main-nav .cd-close-menu::before, #main-nav .cd-close-menu::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    width: 20px;
+    height: 3px;
+}
+#main-nav .cd-close-menu::before
+{
+    content: "\f0d9";
+    font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+/*--adjust as necessary--*/
+color: #000;
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    width: 20px;
+    height: 3px;
+}
+
+
+.no-touch #main-nav .cd-close-menu:hover::before {
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+.no-touch #main-nav .cd-close-menu:hover::after {
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+#main-nav.is-visible {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.no-js #main-nav {
+    position: static;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.no-js #main-nav .cd-close-menu {
+    display: none;
+}
+
+.cd-shadow-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s 0.5s, opacity 0.5s 0s;
+    -moz-transition: visibility 0s 0.5s, opacity 0.5s 0s;
+    transition: visibility 0s 0.5s, opacity 0.5s 0s;
+}
+.cd-shadow-layer.is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255, 255, 255);
+}
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Header */
+
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: 376px;
+}
+
+.navbar-brand img {
+    height: 100%;
+}
+.navbar-brand {
+    height: 70px;
+}
+#navbar {
+    text-align: center;
+    letter-spacing: 0.29em;
+}
+.navbar-defaul {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: transparent;
+}
+.navbar-defaul .navbar-nav>li>a:focus,
+.navbar-defaul .navbar-nav>li>a:hover,
+.navbar-defaul .navbar-nav>li.active>a {
+    color: #76bcab;
+    background-color: transparent;
+}
+.navbar-defaul .navbar-nav>li>a {
+    color: #ffffff;
+    line-height: 40px;
+}
+
+
+
+.seta,
+.seta:hover,
+.seta:active,
+.seta:focus {
+    font-size: 70px;
+    color: #ffffff;
+    
+    
+}
+.setaButton{display: block;
+    position: absolute;
+    padding-left: 28vw;
+    padding-top: 11vw;;
+    
+}
+.info {
+    background: url(../img/bg-image-1.jpg) no-repeat center center scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Rheiborn Sans Clean';
+    color: #ffffff;
+    background-position-x: 27%;
+    letter-spacing: 0.07em;
+}
+.info hr {
+    width: 50%;
+    
+    
+}
+.row.justify-content-start{position: relative;
+    margin-top: 31rem;}
+    .aling-button{
+        
+        margin-top: 6.3em;
+        left: 5em;
+        position: absolute;
+        color: #34eaea;
+        font-size: 14px;
+        font-family: 'Aleo';
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        
+    }
+    .aling-right{
+        top: -10.7em;
+        position: relative;
+        color: #34eaea;
+        font-size: 14px;
+        font-family: 'Aleo';
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    .info p , .unico p {
+        font-size: 9.9em;
+        text-transform: uppercase;
+        text-align: left;
+        word-spacing: 7px;
+        line-height: 1.0em;;
+    }
+    .bg-rigth{
+        
+        background: #000;
+        width: 81px;
+        height: 47px;
+        position: relative;
+        left: 112px;
+        top: 32px;
+        z-index: 0;
+        
+        
+    }
+    .unico  .cont{
+        position: absolute;
+        
+        width: 220px;
+        
+    }
+    .info .cont{
+        position: absolute;
+        
+        width: 180px;
+        
+    }
+    .about {
+        
+        overflow: hidden;
+    }
+    #seta1 {
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        -moz-animation-duration: 2s;
+        -o-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        animation-delay: 0.35s;
+        -webkit-animation-delay: 0.35s;
+        -moz-animation-delay: 0.35s;
+        -o-animation-delay: 0.35s;
+    }
+    .unico {
+        background: url(../img/unico.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        font-family: 'Rheiborn Sans Clean';
+        color: #ffffff;
+        background-position-x: 27%;
+        letter-spacing: 0.07em;
+        position: relative;
+    }
+    
+    .ficha-tecnica {
+        background: url(../img/ficha-tecnica.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        font-family: 'Rheiborn Sans Clean';
+        color: #ffffff;
+        background-position-x: 27%;
+        letter-spacing: 0.07em;
+        position: relative;
+    }
+    .ficha-tecnica .setaButton{
+        position: relative;
+        top: 34vw;
+        
+    }
+    .about img {
+        max-width: 479px;
+        width: 100%;
+        height: auto;
+    }
+    .unico img {
+        max-width: 709px;
+        width: 100%;
+        height: auto;
+    }
+    .navbar-toggle .icon-bar {
+        background-color: #ffffff;
+        width: 32px;
+        height: 4px;
+    }
+    .navbar-toggle {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .navbar-toggle .icon-bar+.icon-bar {
+        margin-top: 6px;
+    }
+    .navbar-collapse {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    #blocos {
+        text-align: left;
+    }
+    #blocos b {
+        font-family: Times new roman, sans-serif;
+    }
+    .ficha-tecnica hr {
+        width: 50%;
+        border-color: #76bcab;
+    }
+    
+    .sobre-holder {
+        overflow: hidden;
+    }
+    
+    .hero-quarter {
+        width: 50%;
+        height: 50%;
+        float: left;
+    }
+    
+    #filmes:hover,
+    #fotos:hover,
+    #virtual-tour:hover,
+    #sobre:hover {
+        background-size: 115% 115%;
+    }
+    
+    #sobre {
+        background: url(../img/04.jpg) no-repeat;
+        font-family: 'BodoniI';
+        color: #ffffff;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        background-size: 100% 100%;
+        -moz-transition: all .5s;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        background-position: center center;
+    }
+    .menu-holder::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+    }
+    .menu-holder {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    .menu-items {
+        position: relative;
+        z-index: 2;
+        font-size: 35px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .main-contato {
+        background-color: #e4dbca;
+        font-family: BodoniI;
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+    .main-contato input {
+        background-color: transparent;
+        border-color: #000000;
+    }
+    .main-contato h3 {
+        font-size: 43px;
+        color: #76bcab;
+        text-align: left;
+    }
+    .main-contato .form-group,
+    .main-contato p {
+        font-size: 18px;
+        color: #241023;
+        text-align: left;
+    }
+    .menu-table {
+        height: 100%;
+        width: 100%;
+        display: table;
+    }
+    .slides-navigation a {
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        border-radius: 30px;
+        display: block;
+        text-decoration: none;
+        border: 3px solid #fff;
+        color: white;
+        font-weight: bold;
+        font-size: 26px;
+        margin: 0 25px;
+        text-shadow: 0 1px 1px #000;
+        text-align: center;
+        height: 40px;
+        width: 40px;
+        top: -40px;
+        padding: 1px;
+        -webkit-box-shadow: 0 1px 1px black;
+        -moz-box-shadow: 0 1px 1px black;
+        box-shadow: 0 1px 1px black;
+        -webkit-transition: background 0.15s ease;
+        -moz-transition: background 0.15s ease;
+        -o-transition: background 0.15s ease;
+        transition: background 0.15s ease;
+    }
+    .form-control {
+        background-color: transparent;
+        border: 1px solid #000;
+    }
+    #myForm {
+        text-align: left;
+    }
+    input#contact-send {
+        background-color: #76bcab;
+        color: white;
+        border: 0px;
+    }
+    .imgs-slider {
+        user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    .list-unstyled{
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Aleo';
+        text-align: left;
+        max-width: 211px;
+    }
+    .dubitle{
+        font-family: 'Rheiborn Sans Clean';
+        color:#ffffff;
+        font-size: 2em;
+        text-align: left;
+    }
+    .dubitle:hover{
+        cursor: pointer;
+        color: #34eaea;
+    }
+    
+    .titleFooter{
+        font-family: 'Rheiborn Sans Clean';
+        color:#ffffff;
+        font-size: 5em;
+        text-align: left;
+        max-width: 287px;
+        padding-left: 13px;
+        
+    }
+    
+    .text_link-right {
+        position: relative;
+        top: 62em;
+        right: 0;
+        width: 290px;
+    }
+    span.cont{z-index: 999;position: relative;}
+    
+    #exclusivo{
+        background: url(../img/bg=footer.jpg) no-repeat;
+        background-size: 100% 100%;
+        background-position: bottom center;
+        
+        
+    }
+    #exclusivo ul.list-unstyled a{
+        color: #34eaea;
+        font-size: 12px;
+        font-family: 'Aleo';
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    #exclusivo .col-md-3:hover{cursor: pointer}
+    #exclusivo .col-md-3:hover ul.list-unstyled a  {
+        color: #fff;
+        cursor: pointer;
+    }
+    #exclusivo .col-md-3:hover  .dubitle{
+        cursor: pointer;
+        color: #34eaea;
+    }
+    #exclusivo .col-md-4 span{
+        font-family: 'Rheiborn Sans Clean';
+        color:#ffffff;
+        font-size: 26px;
+        text-align: left;
+        max-width: 287px;
+        display: block;
+        
+    }
+    #exclusivo hr{
+        color: #262626;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        border-top: 1px solid #262626;
+    }
+    
+    #exclusivo .setaButton{
+        position: relative;
+        padding-left: 0;
+        padding-top: 0;
+        margin: 0 auto;
+        text-align: center;
+        
+        
+    }
+    .col-xl-1.col-lg-1.col-sm-0, .col-md-1.col-sm-0.col-xl-1 {
+        border-left: 1px solid #262626;
+        
+        height: 200px;
+        margin-top: 4em;
+    }
+    
+    #exclusivo .col-md-4  .form-group{
+        border: 2px solid #fff ;
+        max-width: 262px;
+    }
+    
+    #exclusivo input.transparent-input{
+        background-color:rgba(0,0,0,0) !important;
+        border: none;
+        display: inline;
+        width: 84%;
+        font-family: 'Rheiborn Sans Clean';
+        color: #fff;
+        
+    }
+    button.btn.btn-default.btn-transparent{
+        background-color:rgba(0,0,0,0) !important;
+        border: none;
+        border-left: 2px solid #fff;
+        color: #fff;
+        
+    }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    /* Add a hover effect if you want */
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    /* Set a specific color for each brand */
+    
+    /* Facebook */
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    
+    /* Twitter */
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    
+    .social a {
+        
+        padding: 15px;
+        font-size: 15px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        border: 2px solid #fff;
+        background-color : #fff;
+        color: #000;
+        -webkit-transition: background-color 1.6s ease-out;
+        -moz-transition: background-color 1.6s ease-out;
+        -o-transition: background-color 1.6s ease-out;
+        transition: background-color 1.6s ease-out;
+    }
+    .social a:hover{
+        background-color:#000;
+        color: #24d6d6;
+        -webkit-transition: background-color 1.6s ease-out;
+        -moz-transition: background-color 1.6s ease-out;
+        -o-transition: background-color 1.6s ease-out;
+        transition: background-color 1.6s ease-out;
+    }
+    .nopadddinleft{
+        padding-left: 0px;
+    }
+    
+    .social a.fa.face
+    {
+        margin-right: 2em;
+        
+    }
+    
+    
+    /*  Media */
+    
+    
+    @media only screen and (max-width: 768px) {
+        
+        .info p, .unico p{
+            font-size: 3em;
+        }
+        .setaButton{
+            padding-top: 39vw;
+        }
+        .titleFooter{
+            text-align: center !important;
+        }
+        .titleFooter, #exclusivo .col-md-4 .form-group{
+            margin: 0 auto;
+        }
+        .nopadddinleft,.col-md-4.text-left {
+            
+            text-align: center !important;
+            margin: 0 auto;
+        }
+        .col-md-4.text-left, ul.list-unstyled {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        div#ficha-tecnica span.cont{
+
+            z-index: 999;
+            position: relative;
+            padding: 20px;
+            background: #000;
+            font-size: 1.2rem;
+            
+        }
+        .col-xl-1.col-lg-1.col-sm-0, .col-md-1.col-sm-0.col-xl-1{
+            height: 3vh;
+        }
+        .col-sm-12.col-sm-4.col-lg-3.col-xl-3 {
+            border-bottom: 1px solid #262626;
+            width: 80%;
+            margin: 0 auto;
+        }
+        #cd-logo{
+            left: 26%;
+        }
+        .text_link-right{
+            top: 25em;
+        }
+        #exclusivo hr {
+            color: #262626;
+            padding-top: 0;
+            padding-bottom: 0;
+            border-top: 1px solid #262626;
+        }
+        .info,.unico{
+            background-position-x: 35%;
+        }
+        #main-nav li a{
+            font-size: 4rem;
+        }
+        #main-nav{
+            padding: 12rem 8% 8% 8%;
+        }
+        #main-nav .cd-close-menu{
+            right: 1%;;
+        }
+        .aling-button{
+            margin-top: 0;
+        }
+
+    }
+        
+        
+        @media only screen and (min-width: 768px) {
+            #cd-intro h1 {
+                font-size: 26px;
+                font-size: 1.625rem;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .cd-header {
+                height: 80px;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) {
+            #cd-logo {
+                left: 30%;
+                top: 24px;
+            }
+        }
+        @media only screen and (min-width: 1170px) {
+            #cd-logo {
+                left: 40%;
+            }
+        }
+        @media only screen and (min-width: 768px) {
+            .cd-menu-trigger {
+                top: 16px;
+                right: 10px;
+                font-size: 16px;
+                font-size: 1rem;
+            }
+        }
+        @media only screen and (min-width: 1170px) {
+            .cd-menu-trigger {
+                right: 0px;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .navbar-header {
+                width: 90px
+            }
+            .navbar-nav,
+            .navbar-nav li {
+                float: none !important;
+            }
+            .navbar-nav li {
+                display: inline-block;
+            }
+            .navbar-defaul {
+                background-color: rgba(0, 0, 0, 0.5)!important;
+            }
+            .navbar-nav li.social-icon {
+                float: right !important;
+            }
+            .navbar-nav li.social-icon a {
+                float: right !important;
+                padding: 15px 5px;
+            }
+        }
